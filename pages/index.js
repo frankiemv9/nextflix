@@ -33,27 +33,30 @@ export default function Home({
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <NavBar username='frankie@example.com' />
-      <Banner
-        title='Clifford the red dog'
-        subTitle='a very cute dog'
-        imgUrl='/static/clifford.webp'
-      />
-      <div className={styles.sectionWrapper}>
-        <SectionCards title='Disney' videos={disneyVideos} size='large' />
-      </div>
-      <div className={styles.sectionWrapper}>
-        <SectionCards title='Travel' videos={travelVideos} size='small' />
-      </div>
-      <div className={styles.sectionWrapper}>
-        <SectionCards
-          title='Khoai Lang Thang'
-          videos={KLTVideos}
-          size='small'
+
+      <div className={styles.main}>
+        <NavBar username='frankie@example.com' />
+        <Banner
+          title='Clifford the red dog'
+          subTitle='a very cute dog'
+          imgUrl='/static/clifford.webp'
         />
-      </div>
-      <div className={styles.sectionWrapper}>
-        <SectionCards title='Popular' videos={popularVideos} size='medium' />
+        <div className={styles.sectionWrapper}>
+          <SectionCards title='Disney' videos={disneyVideos} size='large' />
+        </div>
+        <div className={styles.sectionWrapper}>
+          <SectionCards title='Travel' videos={travelVideos} size='small' />
+        </div>
+        <div className={styles.sectionWrapper}>
+          <SectionCards
+            title='Khoai Lang Thang'
+            videos={KLTVideos}
+            size='small'
+          />
+        </div>
+        <div className={styles.sectionWrapper}>
+          <SectionCards title='Popular' videos={popularVideos} size='medium' />
+        </div>
       </div>
     </div>
   )

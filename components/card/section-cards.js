@@ -8,7 +8,9 @@ const SectionCards = (props) => {
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.cardWrapper}>
         {videos.map((video, index) => {
-          return <Card imgUrl={video.imgUrl} size={size} id={index} />
+          return (
+            <Card imgUrl={video.imgUrl} size={size} id={index} key={index} />
+          )
         })}
       </div>
     </section>
